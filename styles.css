@@ -145,9 +145,93 @@ html {
     filter: brightness(1.5); /* Яркость при наведении */
   }
  
-
-  .slidersANDcategories{
+  .sliderANDcategories {
     max-width: 1938px;
-    padding: 0 ;
+    padding: 0;
     margin: 0 auto;
   }
+  
+  .categories {
+    display: flex;
+    flex-direction: column; /* Все элементы будут располагаться вертикально */
+    width: 426px; /* Устанавливаем точную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+  }
+  
+  .categories__main {
+    display: flex; /* Это выстраивает текст и картинку в ряд */
+    align-items: center; /* Выравнивание по вертикали */
+    background-color: #888;
+    height: 90px; /* Высота прямоугольника */
+    padding-left: 35px; /* Отступ слева */
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%; /* Обеспечиваем, что контейнер занимает всю доступную ширину */
+  }
+  
+  .categories__main-categorie {
+    margin-right: 10px; /* Отступ от картинки */
+  }
+  
+  .categories__main-categorie__arrow {
+    width: 40px; /* Ограничение размера картинки */
+    height: 30px; /* Ограничение размера картинки */
+    margin-left: auto; /* Отодвигает картинку вправо */
+    margin-right: 30px; /* Отступ от правого края */
+  }
+  
+  .category-item {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ширина контейнера по всей доступной ширине */
+    height: 64px; /* Высота каждой категории */
+    padding-left: 35px; /* Отступ от левого края */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+  }
+  
+  .category-item__arrow {
+    width: 30px; /* Ограничение размера картинок */
+    height: 30px; /* Ограничение размера картинок */
+    margin-left: auto; /* Отодвигает картинку вправо */
+    margin-right: 15px; /* Отступ от правого края */
+  }
+  
+  .categories__categories__even,
+  .categories__categories__odd {
+    flex-grow: 1; /* Заставляем текст занимать оставшуюся ширину */
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .categories__categories__even {
+    background-color: #A2A2A2;
+    color: #0c0808;
+  }
+  
+  .categories__categories__odd {
+    background-color: #DAD6D6;
+    color: #0c0808;
+  }
+  
+  .categories__categories__even:hover {
+    background-color: #D5D902;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+  
+  .categories__categories__odd:hover {
+    background-color: #5ee257;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+  
+  .categories__main:hover {
+    background-color: rgb(83, 77, 77);
+    border: 2px solid rgb(139, 224, 60);
+    font-weight: bold;
+  }
+
+  
+
