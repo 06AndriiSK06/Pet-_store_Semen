@@ -1,0 +1,153 @@
+/* Обнуляем стили */
+html {
+    box-sizing: border-box;
+    font-size: 16px; /* Базовый размер шрифта */
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1938px;
+    padding: 0 ;
+    margin: 0 auto;
+  }
+  
+  .header__inner {
+    display: flex;
+    align-items: center; 
+    
+    background-color: #D5D902;
+    height: 100px; 
+    padding-bottom: 10px ;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    height: 500px;
+    margin-left: -100px;
+  }
+  
+  .header__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 130px; 
+  }
+  
+  .header__inner-p {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  .image-under-header {
+    margin-left:130px;
+  }
+  
+  .header__inner-domen,
+  .header__inner-phone {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header__link {
+    text-decoration: none;
+    color: red; 
+  }
+  
+  .header__link:hover {
+    color:blue;
+  }
+  
+  .image-under-header{
+    margin-top: 60px;
+  }
+
+
+
+  .placeholder {
+    width: 655px;
+    height: 68px;
+    background-color: #F7EDED;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #888;
+    border: 1px solid #ccc;
+  }
+  
+  
+  
+  .icon-wrapper svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
+.header_inner2{
+    display: flex;
+    gap: 350px;
+    align-items: center;
+    padding-bottom: 40px;
+}   
+
+.korzina{
+    height: 70px;
+    width: 70px;
+}
+.paceholdericon{
+    display: flex;
+}
+.icon-wrapper {
+    width: 68px;
+    height: 68px;
+    background-color: #8E8787;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.icon-wrapper:hover {
+    background-color: green; /* Цвет фона на зеленый */
+}
+
+.icon-wrapper:hover svg {
+    fill: aqua; /* Цвет иконки на аква */
+}
+
+
+.basket--icon {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .basket--icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7); /* Сияющий эффект */
+  }
+
+  .basket--icon svg {
+    transition: filter 0.3s ease;
+  }
+
+  .basket--icon:hover svg {
+    filter: brightness(1.5); /* Яркость при наведении */
+  }
+ 
+
+  .slidersANDcategories{
+    max-width: 1938px;
+    padding: 0 ;
+    margin: 0 auto;
+  }
