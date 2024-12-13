@@ -77,7 +77,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+let slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
 
+      // Скрываем все слайды
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
 
+      // Увеличиваем индекс слайда
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
 
+      // Снимаем класс 'active' с всех точек
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      // Показываем текущий слайд и добавляем класс 'active' к точке
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+
+      // Меняем изображение каждые 2 секунды
+      setTimeout(showSlides, 2000); 
+    }
