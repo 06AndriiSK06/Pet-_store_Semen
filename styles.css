@@ -382,3 +382,386 @@ img {vertical-align: middle;}
   display: block; 
   margin: 0 auto; 
 }
+
+.text__under__main{ 
+  max-width: 1938px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+
+.text__under__main__recommendations {
+  color: #ef0909;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-right: 250px
+}
+
+.text__under__main__news {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  
+}
+
+
+.sliders__under__main { 
+  display: flex;
+  max-width: 1938px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ececec;
+  height: auto;
+  overflow: visible;
+}
+.sliders__under__main__recommendations {
+  margin-left: -150px;
+  
+}
+
+
+
+
+/* Основной контейнер слайдера */
+.slider-container1 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  margin: 199px 200px;
+
+  text-align: center;
+}
+
+/* Кнопки управления над изображением */
+.controls1 {
+  position: absolute;
+  top: 10px; /* Расположены сверху с отступом */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Кнопки по центру сверху */
+  z-index: 10; /* Отображаются поверх изображения */
+  
+}
+
+/* Стили для кнопок */
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+
+  padding: 10px 15px; /* Размер кнопок */
+  margin: 0 5px; /* Расстояние между кнопками */
+  border-radius: 50%;
+  pointer-events: auto; /* Включаем клики по кнопкам */
+}
+
+/* Слайдер */
+.slider1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  max-width: 428px;
+  align-items: center;
+
+}
+
+/* Стили для изображений внутри слайдера */
+.slide1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; Изображение полностью вмещается без обрезки */
+  display: none; /* Скрываем все изображения по умолчанию */
+}
+
+/* Показываем активное изображение */
+.slide1.active {
+  display: block;
+}
+
+/* Индикаторы под слайдером */
+.dots1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* padding-bottom: 20px; */
+  /* margin-left: -180px; */
+}
+
+/* Стили для индикаторов */
+.dot1 {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Активный индикатор */
+.dot1.active {
+  background-color: #717171;
+}
+
+
+
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 1400px;
+  /* margin: 0 auto;
+  max-width: 1928px; */
+}
+
+.product-category {
+  padding: 0 1
+0vw;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  margin-left: 400px;
+  color: #ef0909;
+  font-weight: bold;
+  
+
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+
+  cursor: pointer;
+  z-index: 8;
+  margin-right: 0;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  /* opacity: 1; */
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+.slider-container1{
+
+  max-width: 428px;
+}
+.first__slider__recommendations {
+  width: 428px;
+  margin-right: 250px;
+}
+
+
+
+.slide-container {
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.slider1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-container {
+  position: relative;
+  display: none; /* Все слайды скрыты по умолчанию */
+  text-align: center;
+}
+
+.slide-container.active {
+  display: block; /* Показываем только активный слайд */
+}
+
+
+
+.slide-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+  padding: 5px;
+  text-align: center;
+  z-index: 9999; /* Текст будет сверху изображения */
+}
+

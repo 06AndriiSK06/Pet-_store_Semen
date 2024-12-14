@@ -11,12 +11,12 @@
     <header class="header">
       <div class="header__container">
         <div class="header__content">
-          <!-- Логотип -->
+          <!-- Logo -->
           <a href="#" class="header__logo">
             <img src="photo/svg/logo.png.svg" alt="Logo" />
           </a>
 
-          <!-- Текстовая информация -->
+          
           <div class="header__info">
             <p class="header__about">
               <a href="https://example.com" class="header__link">О МАГАЗИНІ</a>
@@ -67,7 +67,7 @@
     </header>
     <div class="container">
       <main>
-        <!-- Секция категорий -->
+        <!-- section "categories" -->
         <section class="categories">
           <div class="categories__header">
             <p class="categories__title">Категорії</p>
@@ -150,13 +150,252 @@
         </section>
       </main>
 
-      <!-- Всплывающее окно -->
       <div class="popup hidden">
         <button class="popup__close">&times;</button>
         <p>Контент вашего всплывающего окна</p>
       </div>
     </div>
+    <section class="text__under__main">
+      <p class="text__under__main__recommendations">Ми рекомендуємо</p>
+      <p class="text__under__main__news">Новинки</p>
+    </section>
+    <section class="sliders__under__main">
+      <section class="first__slider__recommendations">
+      <div class="sliders__under__main__recommendations">
+        <div class="slider-container1">
+          <!-- buttons over slider -->
+          <div class="controls1">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+          <!-- SLIDER -->
+           
+          <div class="slider1">
+            <div class="slide-container">
+              <img src="photo/recommendations/dog food1.webp" alt="Photo 1" class="slide1" />
+              <div class="slide-text">Корм для</div>
+            </div>
+            <div class="slide-container">
+              <img src="photo/recommendations/dog food2.webp" alt="Photo 2" class="slide1" />
+              <div class="slide-text">Корм для</div>
+            </div>
+            <div class="slide-container">
+              <img src="photo/recommendations/300x500.jpg" alt="Photo 3" class="slide1" />
+              <div class="slide-text">Корм для</div>
+            </div>
+            <div class="slide-container">
+              <img src="photo/recommendations/300x600.jpg" alt="Photo 4" class="slide1" />
+              <div class="slide-text">корм для</div>
+            </div>
+          </div>
+          
+          
+          
+          
 
+          <!-- Indicators under slider -->
+          <div class="dots1">
+            <span class="dot1" onclick="currentSlide(1)"></span>
+            <span class="dot1" onclick="currentSlide(2)"></span>
+            <span class="dot1" onclick="currentSlide(3)"></span>
+            <span class="dot1" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="product">
+      <h2 class="product-category">best selling</h2>
+      <button class="pre-btn">
+        <img src="photo/svg/categories__main-categorie__arrow.png" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="photo/svg/categories__main-categorie__arrow.png" alt="" />
+      </button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item1.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item2.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item3.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item4.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item5.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item6.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item7.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item8.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item9.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="photo/new items/new__item10.png"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

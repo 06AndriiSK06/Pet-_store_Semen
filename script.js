@@ -106,3 +106,96 @@ let slideIndex = 0;
       // Меняем изображение каждые 2 секунды
       setTimeout(showSlides, 2000); 
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentSlideIndex = 0; // Slide start index
+        const slides = document.querySelectorAll('.slide1');// Get all slides
+        const dots = document.querySelectorAll('.dot1'); // Get all indicators (circles)
+      
+       // Function to display the slide
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            dots[i].classList.remove('active');
+          });
+          slides[index].classList.add('active');
+          dots[index].classList.add('active');
+        }
+      
+        // Function to switch to next slide
+        function nextSlide() {
+          currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+          showSlide(currentSlideIndex);
+        }
+      
+        
+        function prevSlide() { //// Function for switching to the previous slide
+          currentSlideIndex =
+            (currentSlideIndex - 1 + slides.length) % slides.length;
+          showSlide(currentSlideIndex);
+        }
+      
+        
+        function currentSlide(index) { //// Function for selecting a specific slide by indicator
+          currentSlideIndex = index - 1; 
+          showSlide(currentSlideIndex);
+        }
+      
+        
+        showSlide(currentSlideIndex);
+      
+        // Slide switching every 10 seconds
+        // setInterval(nextSlide, 10000);
+      
+        // Export functions to the global context
+        window.nextSlide = nextSlide;
+        window.prevSlide = prevSlide;
+        window.currentSlide = currentSlide;
+      });
+      const productContainers = [...document.querySelectorAll('.product-container')];
+      const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+      const preBtn = [...document.querySelectorAll('.pre-btn')];
+      
+      productContainers.forEach((item, i) => {
+          let containerDimensions = item.getBoundingClientRect();
+          let containerWidth = containerDimensions.width;
+      
+          nxtBtn[i].addEventListener('click', () => {
+              item.scrollLeft += containerWidth;
+          })
+      
+          preBtn[i].addEventListener('click', () => {
+              item.scrollLeft -= containerWidth;
+          })
+      })
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide-container');
+      const totalSlides = slides.length;
+      
+      // Функция для отображения слайда
+      function showSlide(index) {
+        // Скрываем все слайды
+        slides.forEach(slide => slide.classList.remove('active'));
+        
+        // Показываем только текущий слайд
+        slides[index].classList.add('active');
+      }
+      
+    
+      showSlide(currentSlide);
+   
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+      
+     
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+      
+     
+      document.querySelector('.next').addEventListener('click', nextSlide);
+      document.querySelector('.prev').addEventListener('click', prevSlide);
+      
