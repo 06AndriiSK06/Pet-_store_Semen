@@ -14,7 +14,10 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
+.header{
+  max-width: 1928px;
+  margin: 0 auto;
+}
 .header__container {
   max-width: 1938px;
   padding: 0;
@@ -482,11 +485,10 @@ img {vertical-align: middle;}
   position: relative;
   width: 100%;
   height: 100%;
-  /* object-fit: contain; Изображение полностью вмещается без обрезки */
-  display: none; /* Скрываем все изображения по умолчанию */
+  /* object-fit: contain;  */
+  display: none; 
 }
 
-/* Показываем активное изображение */
 .slide1.active {
   display: block;
 }
@@ -730,9 +732,6 @@ img {vertical-align: middle;}
 
 
 
-
-
-
 .slider1 {
   position: relative;
   display: flex;
@@ -765,3 +764,66 @@ img {vertical-align: middle;}
   z-index: 9999; /* Текст будет сверху изображения */
 }
 
+
+.images__under__sliders {
+  max-width: 1928px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  max-height: 500px;
+  
+}
+
+.photoes__under__sliders {
+  display: flex; 
+  gap: 90px; 
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; 
+}
+
+.photoes__under__sliders img {
+  max-height: 100%; 
+  width: auto; 
+  flex: 1 1 auto; 
+  object-fit: contain; 
+}
+.photoes__under__sliders a img {
+  transition: 0.3s ease; /* Smooth effect transition */
+}
+
+.photoes__under__sliders a img:hover {
+  filter: brightness(1.2); /* Makes the image brighter */
+  background-color: rgba(255, 255, 255, 0.2); /*Adds a slight light tint*/
+  box-shadow: 20px 10px 20px 10px rgba(229, 255, 0, 0.921); /* Backlight effect */
+}
+
+.images__under__sliders {
+  position: relative; /* Позволяет точно позиционировать элементы внутри секции */
+}
+
+.photoes__under__sliders {
+  display: flex; /* Удобно выравнивает изображения в ряд */
+  justify-content: space-between; /* Равномерное распределение между изображениями */
+}
+
+.photoes__under__sliders a img {
+  transition: 0.3s ease;
+}
+
+.photoes__under__sliders a img:hover {
+  filter: brightness(1.2); /* Эффект яркости при наведении */
+  box-shadow: 0 4px 8px rgba(240, 240, 27, 0.5); /* Подсветка */
+}
+
+.bottom-line {
+  width: 1928px; 
+  height: 1px; 
+  background-color: black; 
+  margin: 0 auto; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%); /* Сдвиг для точного центрирования */
+}
