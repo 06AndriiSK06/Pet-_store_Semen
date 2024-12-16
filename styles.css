@@ -417,7 +417,7 @@ img {vertical-align: middle;}
   margin: 50px auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ececec;
+  /* background-color: #ececec; */
   height: auto;
   overflow: visible;
 }
@@ -426,7 +426,9 @@ img {vertical-align: middle;}
   
 }
 
-
+.product-container::-webkit-scrollbar {
+  /* display: none; */
+}
 
 
 /* Основной контейнер слайдера */

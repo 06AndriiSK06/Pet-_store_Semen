@@ -219,16 +219,16 @@ let slideIndex = 0;
       ];
       
       const dogsData = [
-        { image: "path/to/dog1.jpg", price: "999грн" },
-        { image: "path/to/dog2.jpg", price: "999грн" },
-        { image: "path/to/dog3.jpg", price: "999грн" },
-        { image: "path/to/dog4.jpg", price: "999грн" },
-        { image: "path/to/dog5.jpg", price: "999грн" },
-        { image: "path/to/dog6.jpg", price: "999грн" },
-        { image: "path/to/dog7.jpg", price: "999грн" },
-        { image: "path/to/dog8.jpg", price: "999грн" },
-        { image: "path/to/dog9.jpg", price: "999грн" },
-        { image: "path/to/dog10.jpg", price:"999грн" },
+        { image: "photo/animal__food/dog__food1.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food2.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food3.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food4.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food5.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food6.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food7.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food8.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food9.webp", price: "999грн" },
+        { image: "photo/animal__food/dog__food10.webp", price:"999грн" },
       ];
       
       // Функция для отрисовки слайдера
