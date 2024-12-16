@@ -318,13 +318,13 @@ img {vertical-align: middle;}
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -528,9 +528,9 @@ img {vertical-align: middle;}
   position: relative;
   overflow: hidden;
   padding: 20px;
-  max-width: 1400px;
-  /* margin: 0 auto;
-  max-width: 1928px; */
+  
+  margin: 0 auto;
+  max-width: 1928px;
 }
 
 .product-category {
@@ -548,7 +548,7 @@ img {vertical-align: middle;}
 }
 
 .product-container {
-  padding: 0 10vw;
+  /* padding: 0 10vw; */
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -649,7 +649,7 @@ img {vertical-align: middle;}
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
+  /* width: 10vw; */
   height: 100%;
   position: absolute;
   top: 0;
@@ -741,12 +741,12 @@ img {vertical-align: middle;}
 
 .slide-container {
   position: relative;
-  display: none; /* Все слайды скрыты по умолчанию */
+  display: none; 
   text-align: center;
 }
 
 .slide-container.active {
-  display: block; /* Показываем только активный слайд */
+  display: block; 
 }
 
 
@@ -758,10 +758,9 @@ img {vertical-align: middle;}
   width: 100%;
   font-size: 16px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
-  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  z-index: 9999; /* Текст будет сверху изображения */
+  z-index: 9999; 
 }
 
 
@@ -800,14 +799,13 @@ img {vertical-align: middle;}
 }
 
 .images__under__sliders {
-  position: relative; /* Позволяет точно позиционировать элементы внутри секции */
+  position: relative; 
 }
 
 .photoes__under__sliders {
-  display: flex; /* Удобно выравнивает изображения в ряд */
-  justify-content: space-between; /* Равномерное распределение между изображениями */
+  display: flex; 
+  justify-content: space-between; 
 }
-
 .photoes__under__sliders a img {
   transition: 0.3s ease;
 }
@@ -826,4 +824,118 @@ img {vertical-align: middle;}
   bottom: 0; 
   left: 50%; 
   transform: translateX(-50%); /* Сдвиг для точного центрирования */
+}
+
+
+
+.button-container__animals {
+  display: flex; /* Располагает элементы горизонтально */
+  justify-content: center; /* Центрирует кнопки по горизонтали */
+  gap: 10px; /* Расстояние между кнопками */
+  margin-top: 50px; /* Отступ сверху */
+  margin-left: -1100px;
+}
+.button__dogs__cats {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50; /* Зеленый цвет */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1px;
+}
+.button__dogs__cats:hover {
+  background-color: #45a049; /* Цвет при наведении */
+}
+
+.sliders2__with__button__selection {
+margin-bottom: 50px;
+}
+
+
+
+.container__animal {
+  width: 1928px;
+  max-height: 500px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.buttons__animal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.active__animal {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+button:hover:not(.active__animal) {
+  background-color: #e7e7e7;
+}
+
+.slider__animal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.slider-item__animal {
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.slider-item__animal img {
+  width: 100%; /* Изображение займет всю ширину карточки */
+  height: 250px; /* Устанавливаем фиксированную высоту */
+  
+  border-radius: 5px;
+}
+
+
+.price__animal {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-to-cart__animal {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart__animal:hover {
+  background-color: #218838;
 }
