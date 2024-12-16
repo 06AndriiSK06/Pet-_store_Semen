@@ -233,7 +233,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ececec;
+ 
   height: auto;
   overflow: visible;
 }
@@ -493,6 +493,7 @@ img {vertical-align: middle;}
 
 .slide1.active {
   display: block;
+  margin-top: -20px;
 }
 
 /* Индикаторы под слайдером */
@@ -648,31 +649,53 @@ img {vertical-align: middle;}
   text-decoration: line-through;
 }
 
+
 .pre-btn,
 .nxt-btn {
   border: none;
-  /* width: 10vw; */
   height: 100%;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
-
   cursor: pointer;
   z-index: 8;
   margin-right: 0;
+  background-color: transparent; /* clear backgroung */
+  padding: 0; 
+  outline: none; 
 }
+
+
+.pre-btn:hover,
+.nxt-btn:hover,
+.pre-btn:focus,
+.nxt-btn:focus,
+.pre-btn:active,
+.nxt-btn:active {
+  background-color: transparent;
+  outline: none; 
+  box-shadow: none; 
+}
+
 
 .pre-btn {
   left: 0;
-  transform: rotate(180deg);
+  transform: rotate(180deg); /* Поворачиваем стрелку */
 }
 
 .nxt-btn {
   right: 0;
 }
+
+/* Изображения внутри кнопок */
+.pre-btn img,
+.nxt-btn img {
+  display: block; /* Убираем возможные отступы вокруг изображения */
+  pointer-events: none; /* Изображения не перехватывают события мыши */
+}
+
 
 
 
@@ -739,6 +762,7 @@ img {vertical-align: middle;}
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -80px;
 }
 
 .slide-container {
