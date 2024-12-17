@@ -602,7 +602,7 @@ img {vertical-align: middle;}
   text-transform: capitalize;
   border: none;
   outline: none;
-  background: #fff;
+  background: red;
   border-radius: 5px;
   transition: 0.5s;
   cursor: pointer;
@@ -751,9 +751,6 @@ img {vertical-align: middle;}
   position: relative;
   text-align: center;
 }
-
-
-
 
 
 
@@ -907,6 +904,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  
 }
 
 button.active__animal {
@@ -964,4 +962,95 @@ button:hover:not(.active__animal) {
 
 .add-to-cart__animal:hover {
   background-color: #218838;
+}
+
+
+
+.blog__articles {
+  max-width: 1928px;
+  margin: 130px auto;
+  padding: 20px;
+}
+
+.blog__articles__wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 120px;
+}
+
+.blog__articles .blog__articles__wrapper .blog__articles__wrapper__button {
+  background-color: #079818 !important;
+  width: 350px !important;
+  height: 75px !important;
+  font-size: 35px !important;
+  color: red !important;
+  border-radius: 15px !important;
+  border: 2px solid rgb(36, 252, 36) !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: background-color 0.3s ease, transform 0.2s ease !important; /* Плавные изменения */
+}
+
+
+
+.section__container {
+  display: flex;
+  max-height: 600px;
+}
+
+.section__container__wrapper {
+  width: 100%;
+}
+
+.section__container__wrapper__articles {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.section__container__wrapper__articles__article {
+  flex: 0 0 auto; 
+  max-width: 450px;
+}
+
+.section__container__wrapper__articles__article img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+  margin-bottom: 88px;
+}
+
+
+.section__container__wrapper__articles__article img:hover {
+  transform: scale(1.05); 
+}
+.section__container__wrapper__articles__text{
+  font-size: 48px;
+  color: #BDDA00;
+}
+
+.custom-link {
+  color: inherit;           
+  text-decoration: none;  
+  transition: color 0.3s, text-decoration 0.3s; 
+}
+
+.custom-link:hover {
+  color: #ff0000;          
+  text-decoration: underline; 
+}
+.article__line {
+  width: 1928px;
+  height: 1px; 
+  background-color: #000; 
+  margin: 20px auto; 
+}
+
+.article__line--bottom {
+  margin-top: 150px; 
 }
