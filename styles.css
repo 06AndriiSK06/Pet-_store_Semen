@@ -158,18 +158,18 @@ body {
 
 .categories__title {
   margin: 0; 
-  padding: 0 15px; /* Немного отступа внутри */
+  padding: 0 15px; /* padding inside */
 }
 
 .categories__arrow {
   width: 30px;
   height: 30px;
   margin-left: auto;
-  transition: transform 0.3s ease; /* Плавный поворот */
+  transition: transform 0.3s ease; /* Smooth rotation */
 }
 
 .categories__arrow.rotated {
-  transform: rotate(-90deg); /* Поворот на 90 градусов */
+  transform: rotate(-90deg); /* Rotate 90 degrees */
 }
 
 
@@ -431,7 +431,7 @@ img {vertical-align: middle;}
 }
 
 
-/* Основной контейнер слайдера */
+
 .slider-container1 {
   position: relative;
   width: 100%;
@@ -442,15 +442,15 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Кнопки управления над изображением */
+
 .controls1 {
   position: absolute;
-  top: 10px; /* Расположены сверху с отступом */
+  top: 10px; 
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* Кнопки по центру сверху */
-  z-index: 10; /* Отображаются поверх изображения */
+  justify-content: center; 
+  z-index: 10; 
   
 }
 
@@ -463,10 +463,10 @@ img {vertical-align: middle;}
   border: none;
   cursor: pointer;
 
-  padding: 10px 15px; /* Размер кнопок */
-  margin: 0 5px; /* Расстояние между кнопками */
+  padding: 10px 15px; /* button size  */
+  margin: 0 5px; /* size between buttons*/
   border-radius: 50%;
-  pointer-events: auto; /* Включаем клики по кнопкам */
+  pointer-events: auto; /* turn on clicks on buttons */
 }
 
 /* Слайдер */
@@ -482,7 +482,6 @@ img {vertical-align: middle;}
 
 }
 
-/* Стили для изображений внутри слайдера */
 .slide1 {
   position: relative;
   width: 100%;
@@ -496,7 +495,7 @@ img {vertical-align: middle;}
   margin-top: -20px;
 }
 
-/* Индикаторы под слайдером */
+/* indicator under slider */
 .dots1 {
   display: flex;
   justify-content: center;
@@ -682,18 +681,18 @@ img {vertical-align: middle;}
 
 .pre-btn {
   left: 0;
-  transform: rotate(180deg); /* Поворачиваем стрелку */
+  transform: rotate(180deg); /*turn arrow */
 }
 
 .nxt-btn {
   right: 0;
 }
 
-/* Изображения внутри кнопок */
+/* img inside btn   */
 .pre-btn img,
 .nxt-btn img {
-  display: block; /* Убираем возможные отступы вокруг изображения */
-  pointer-events: none; /* Изображения не перехватывают события мыши */
+  display: block; 
+  pointer-events: none; 
 }
 
 
@@ -834,8 +833,8 @@ img {vertical-align: middle;}
 }
 
 .photoes__under__sliders a img:hover {
-  filter: brightness(1.2); /* Эффект яркости при наведении */
-  box-shadow: 0 4px 8px rgba(240, 240, 27, 0.5); /* Подсветка */
+  filter: brightness(1.2); /* Makes the image brighter */
+  box-shadow: 0 4px 8px rgba(240, 240, 27, 0.5); 
 }
 
 .bottom-line {
@@ -846,23 +845,23 @@ img {vertical-align: middle;}
   position: absolute; 
   bottom: 0; 
   left: 50%; 
-  transform: translateX(-50%); /* Сдвиг для точного центрирования */
+  transform: translateX(-50%);
 }
 
 
 
 .button-container__animals {
-  display: flex; /* Располагает элементы горизонтально */
-  justify-content: center; /* Центрирует кнопки по горизонтали */
-  gap: 10px; /* Расстояние между кнопками */
-  margin-top: 50px; /* Отступ сверху */
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 50px;
   margin-left: -1100px;
 }
 .button__dogs__cats {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #4CAF50; /* Зеленый цвет */
+  background-color: #4CAF50; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -870,7 +869,7 @@ img {vertical-align: middle;}
   margin-bottom: 1px;
 }
 .button__dogs__cats:hover {
-  background-color: #45a049; /* Цвет при наведении */
+  background-color: #45a049; 
 }
 
 .sliders2__with__button__selection {
@@ -936,8 +935,8 @@ button:hover:not(.active__animal) {
 }
 
 .slider-item__animal img {
-  width: 100%; /* Изображение займет всю ширину карточки */
-  height: 250px; /* Устанавливаем фиксированную высоту */
+  width: 100%; 
+  height: 250px;
   
   border-radius: 5px;
 }
@@ -1132,13 +1131,47 @@ button:hover:not(.active__animal) {
   width: 320px;
   font-size: 30px;
 }
+
 .footer {
-  height: 500px;
-  width: 1928px;
-  background-color: gray;
-  margin: 0 auto;
+ max-width: 1928px; 
+  background-color: gray; 
+  margin: 0 auto; 
+  padding: 50px 0;
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
 }
-.information__text {
-  display: flex;
-  
+
+.footer section {
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center; 
+  gap: 40px; 
+  margin: 0 auto; 
+  max-width: 1200px; 
+  padding: 20px 0; 
+}
+
+
+.footer img {
+  display: block; 
+  width: auto; 
+  height: auto; 
+}
+
+.information__text__p {
+  color: #fff; 
+  margin: 0; 
+  font-size: 16px; 
+  line-height: 1.5; 
+}
+
+
+.information__text,
+.schedule__text,
+.phone__text,
+.mail__text {
+  display: flex; 
+  gap: 40px; 
+  align-items: center; 
 }
