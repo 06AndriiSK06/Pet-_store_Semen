@@ -172,12 +172,12 @@ let slideIndex = 0;
     const slides = document.querySelectorAll('.slide-container');
     const totalSlides = slides.length;
     
-    // Функция для отображения слайда
+    // Function for drawing the slider
     function showSlide(index) {
       // Скрываем все слайды
       slides.forEach(slide => slide.classList.remove('active'));
       
-      // Показываем только текущий слайд
+      // Show only the current slide
       slides[index].classList.add('active');
     }
     
@@ -204,7 +204,7 @@ let slideIndex = 0;
       const catsButton = document.getElementById('catsButton');
       const dogsButton = document.getElementById('dogsButton');
       
-      // Пример данных для слайдера
+      //creation slider
       const catsData = [
         { image: "photo/animal__food/cat__food.webp", price: "1000грн" },
         { image: "photo/animal__food/cat__food2.webp", price: "1000грн" },
@@ -231,7 +231,7 @@ let slideIndex = 0;
         { image: "photo/animal__food/dog__food10.webp", price:"999грн" },
       ];
       
-      // Функция для отрисовки слайдера
+      // Function for drawing the slider
       function renderSlider(data) {
         slider.innerHTML = "";
         data.forEach(item => {
@@ -246,7 +246,7 @@ let slideIndex = 0;
         });
       }
       
-      // Переключение кнопок
+      // Switching buttons
       catsButton.addEventListener('click', () => {
         catsButton.classList.add('active__animal');
         dogsButton.classList.remove('active__animal');
@@ -259,6 +259,6 @@ let slideIndex = 0;
         renderSlider(dogsData);
       });
       
-      // Инициализация слайдера с кошками
+     
       renderSlider(catsData);
       
