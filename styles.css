@@ -1146,49 +1146,48 @@ button:hover:not(.active__animal) {
   margin: 0 auto; 
   padding: 30px 0;
   display: flex; 
-  flex-wrap: wrap; /* Позволяет перенос строк для секций */
-  justify-content: space-between; /* Равномерное распределение столбцов */
+  flex-wrap: wrap;
+  justify-content: space-between; 
   gap: 20px; 
 }
 
 .footer section {
   display: flex; 
-  flex-direction: column; /* Внутри секции элементы вертикальны */
+  flex-direction: column; 
   justify-content: flex-start;
   align-items: flex-start;
-  width: calc(25% - 20px); /* Каждая секция занимает 1/4 ширины с учетом gap */
+  width: calc(25% - 20px); 
   box-sizing: border-box;
   padding: 5px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  overflow: hidden; /* Скрывает содержимое, выходящее за границы */
-  word-wrap: break-word; /* Переносит длинные строки текста */
+  overflow: hidden; 
+  word-wrap: break-word;
 }
 
 .footer img {
   display: block; 
-  width: 50px; /* Ограничиваем ширину */
-  height: 50px; /* Ограничиваем высоту */
-  object-fit: cover; /* Гарантируем, что изображение будет вписано в размеры */
-  margin-bottom: 10px; /* Отступ от изображения до текста */
+  width: 50px;
+  height: 50px; 
+  object-fit: cover; 
+  margin-bottom: 10px; 
 }
 .information__text__p {
   color: #fff; 
   margin: 0; 
-  font-size: 10px; 
+  font-size: 30px; 
   line-height: 1.5; 
-  word-break: break-word; /* Длинные слова или строки будут переноситься */
-  max-width: 100%; /* Текст не выйдет за пределы секции */
-  overflow-wrap: break-word; /* Альтернативное свойство для переноса текста */
+  word-break: break-word; 
+  max-width: 100%;
+  overflow-wrap: break-word; 
 }
-
 .information__text,
 .schedule__text,
 .phone__text,
 .mail__text {
   display: flex; 
-  flex-direction: column; /* Внутри текст располагается вертикально */
-  gap: 10px; /* Отступ между строками */
+  flex-direction: column; 
+  gap: 10px; 
 }
 
 
@@ -1313,6 +1312,10 @@ button:hover:not(.active__animal) {
   .newsletter__subscription__button__subscribe_1 {
     width: 250px;
   }
+  .information__text__p {
+    
+    font-size: 25px;
+  }
 }
 @media (max-width: 1143px) {
   .header__info {
@@ -1405,6 +1408,10 @@ button:hover:not(.active__animal) {
 }
   .product-category {
     margin-left: 230px;
+  }
+  .information__text__p {
+    
+    font-size: 21px;
   }
 }
 @media (max-width: 888px) {
@@ -1699,6 +1706,9 @@ button:hover:not(.active__animal) {
   .categories{
     background-color: #fff;
   }
+  .first__slider__recommendations {
+    margin-left: 150px;
+  }
 }
 @media (max-width: 432px) {
 .product-container {
@@ -1743,10 +1753,15 @@ button:hover:not(.active__animal) {
     .sliders__under__main {
       margin-left: -190px;
     }
-      .product{
-        max-width: 350px;
-      }
-  
+    .product{
+      max-width: 350px;
+    }
+    .first__slider__recommendations {
+      margin-left: 140px;
+    }
+    .information__text__p {
+      font-size: 10px;
+    }
 }
 @media (max-width: 390px) {
   .header__link {
@@ -1804,7 +1819,9 @@ button:hover:not(.active__animal) {
     margin-left: -194px;
   }
   
-  
+  .first__slider__recommendations {
+    margin-left: 150px;
+  }
   .dots1{
     margin-top: -40px;
   }
@@ -1865,6 +1882,9 @@ button:hover:not(.active__animal) {
 @media (max-width: 331px) {
   .text__under__main {
     margin-left: -194px;
+  }
+  .first__slider__recommendations {
+    margin-left: 100px;
   }
   .sliders__under__main {
     margin-left: -194px;
