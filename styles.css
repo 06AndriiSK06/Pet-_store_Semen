@@ -1559,6 +1559,7 @@ button:hover:not(.active__animal) {
   .container main {
 
     max-width: 450px;
+
   }
 }
   
@@ -1568,7 +1569,10 @@ button:hover:not(.active__animal) {
   }
   .slider-container1 {
     max-width: 350px;
-}
+  }
+  .container__section__rectangles__rectangle {
+    margin: 20px;
+  }
   
 }
 @media (max-width: 520px) {
@@ -1771,13 +1775,22 @@ button:hover:not(.active__animal) {
     width: 90px;
     font-size: 12px;
   }
-  .newsletter__subscription__mail input {
-    width: 120px;
-}
-.newsletter__subscription__text {
-  font-size: 12px;
-  margin-left: 5px;
-}
+    .newsletter__subscription__mail input {
+      width: 120px;
+    }
+  .newsletter__subscription__text {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .information__text__p {
+    font-size: 11px;
+  }.categories__item {
+    width: 180px;
+  }
+  .categories__header {
+    width: 180px;
+  }
+  
 }
 @media (max-width: 379px) {
   .text__under__main {
