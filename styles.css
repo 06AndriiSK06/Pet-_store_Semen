@@ -326,6 +326,7 @@ img {vertical-align: middle;}
   top: 0;
 } */
 
+
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -341,6 +342,10 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.blog__articles__wrapper__button:hover {
+  transform: scale(1.3);
+  background-color: rgb(4, 233, 4);
+}
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -1189,7 +1194,9 @@ button:hover:not(.active__animal) {
   flex-direction: column; 
   gap: 10px; 
 }
-
+.text__about__company__main {
+  color: red;
+}
 
 
 @media (max-width: 1913px) {
@@ -1555,6 +1562,7 @@ button:hover:not(.active__animal) {
   }
   .text__about__company__main {
     font-size: 40px;
+    color: red;
   }
   .container main {
 

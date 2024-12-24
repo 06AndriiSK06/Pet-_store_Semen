@@ -44,7 +44,13 @@ body {
   align-items: center;
   gap: 130px;
 }
+.about{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 1928px;
 
+}
 .header__about {
   font-size: 24px;
   font-weight: bold;

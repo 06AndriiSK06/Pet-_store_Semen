@@ -1,15 +1,10 @@
-# _config.yml
-
-# Для использования только CSS, убираем ссылки на SCSS
 theme: jekyll-theme-primer
-url: "https://username.github.io"  # Замените на ваш URL
-baseurl: ""  # Пусто, если сайт находится на главной странице
+url: "https://username.github.io"
+baseurl: ""
 
-# Убираем SCSS настройки, потому что вы используете только CSS
 sass:
   style: compressed
 
-# Включите конфигурацию для GitHub Pages, если нужно
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
