@@ -1,3 +1,40 @@
+.paymentdetails__main__text {
+    color: red;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin-left: 250px;
+    font-weight: bold;
+
+}
+.main__PaymentDetails {
+    margin: 0 auto;
+    max-width: 1928px;
+    margin-bottom: 100px;
+}
+.main__PaymentDetails__block__name {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.main__PaymentDetails__block {
+    margin-left: 100px;
+}
+.main__PaymentDetails__block__warning {
+    font-size: 28px;
+    color: orange;
+    font-weight: bold;
+}
+
+.main__PaymentDetails__block__contactName {
+    font-size: 28px;
+    font-weight: bold;
+}
+.main__PaymentDetails__block__contactName__small {
+    font-size: 28px;
+}
+.main__PaymentDetails__block__contactName__number {
+    font-size: 28px;
+}
 
 html {
     box-sizing: border-box;
@@ -540,7 +577,7 @@ html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  
+   
     flex-direction: column;
     align-items: center;
     max-width: 1928px;
@@ -712,6 +749,10 @@ html {
     .newsletter__subscription__mail input {
       width: 300px;
     }
+
+    .main__PaymentDetails {
+        margin-left: -70px;
+    }
   }
   
   @media (max-width: 1162px) {
@@ -857,20 +898,41 @@ html {
       .header__logo img {
         display: none;
     }
-   .newsletter__subscription__text{
-    margin-left: -60px;
-   }
-   .newsletter__subscription__button__subscribe_1 {
-    font-size: 21px;
-    width: 150px;
-   }
-   .newsletter__subscription__mail input {
-    width: 200px;
+    .newsletter__subscription__text{
+        margin-left: -60px;
+    }
+    .newsletter__subscription__button__subscribe_1 {
+        font-size: 21px;
+        width: 150px;
+    }
+    .newsletter__subscription__mail input {
+        width: 200px;
+    }
+    .newsletter__subscription__text {
+        margin-left: 10px;
+    }
+
+
+
+
+    .main__PaymentDetails__block__name {
+        font-size: 24px;
+    }
+    .main__PaymentDetails__block__warning { 
+        font-size: 20px;
+
+    }
+    .main__PaymentDetails__block__contactName {
+        font-size: 24px;
+    }
+    .main__PaymentDetails__block__contactName__small {
+        font-size: 22px;
+    }
+    .main__PaymentDetails__block__contactName__number {
+        font-size: 20px;
+    }
   }
-  .newsletter__subscription__text {
-    margin-left: 10px;
-  }
-  }
+
   
   @media (max-width: 690px) {
     .container__section__rectangles__rectangle {
@@ -949,7 +1011,10 @@ html {
     }
     .information__text__p {
       font-size: 14px;
-  }
+    }
+    .paymentdetails__main__text {
+        margin-left: 130px;
+    }
   }
   
   

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="PaymentDetails.css" />
   </head>
   <body>
     <header class="header">
@@ -63,29 +63,38 @@
         </div>
       </div>
     </header>
+    <section class="main__PaymentDetails">
+      <p class="paymentdetails__main__text">Реквізити</p>
+      <section class="main__PaymentDetails__block">
+        <p class="main__PaymentDetails__block__name">Реквізити</p>
+        <p class="main__PaymentDetails__block__warning">
+          ОБОВ'ЯЗКОВО в примітці до платежу вказуйте НОМЕР ЗАМОВЛЕННЯ, інакше
+          система не зможе порівняти оплату із замовленням і знадобиться ручна
+          перевірка, а це в свою чергу вплине на швидкість комплектації
+          замовлення.
+        </p>
+        <p class="main__PaymentDetails__block__contactName">
+          Найменування одержувача:
+        </p>
+        <p class="main__PaymentDetails__block__contactName__small">
+          Іванов І.І.
+        </p>
+        <p class="main__PaymentDetails__block__contactName__small">
+          Назва банку: АТ КБ «ПриватБанк»
+        </p>
 
-    <div class="container__reviews">
-      <h2>Залишити відгук</h2>
-      <form id="review-form">
-        <label for="review">Ваш відгук:</label>
-        <textarea id="review" rows="4" style="width: 100%"></textarea>
-        <div class="stars" id="star-container">
-          <span data-value="1">★</span>
-          <span data-value="2">★</span>
-          <span data-value="3">★</span>
-          <span data-value="4">★</span>
-          <span data-value="5">★</span>
-        </div>
-        <button class="button__reviews" type="submit">Підтвердити</button>
-      </form>
-
-      <h2>Відгуки</h2>
-      <div id="reviews-container"></div>
-    </div>
+        <p class="main__PaymentDetails__block__contactName__small">
+          Рахунок одержувача IBAN:
+        </p>
+        <b class="main__PaymentDetails__block__contactName__number"
+          >UAXX XXXXX XXXXX XXXXXXXXXXXXX</b
+        >
+      </section>
+    </section>
     <footer class="footer">
       <section
         class="
-      "
+        "
       >
         <div class="information__text">
           <img src="photo/footer/footer__information.png" alt="" />
@@ -129,6 +138,5 @@
         </div>
       </section>
     </footer>
-    <script src="reviews.js"></script>
   </body>
 </html>

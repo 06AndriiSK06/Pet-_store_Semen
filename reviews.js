@@ -69,45 +69,44 @@ combinedReviews.forEach(({ name, review, rating }) => {
 });
 };
 
-      // Handle star selection
-      starContainer.addEventListener("click", (e) => {
-        if (e.target.tagName === "SPAN") {
-          selectedRating = parseInt(e.target.getAttribute("data-value"));
+// Handle star selection
+starContainer.addEventListener("click", (e) => {
+    if (e.target.tagName === "SPAN") {
+        selectedRating = parseInt(e.target.getAttribute("data-value"));
 
-          Array.from(starContainer.children).forEach((star, index) => {
-            if (index < selectedRating) {
-              star.classList.add("selected");
-            } else {
-              star.classList.remove("selected");
+        Array.from(starContainer.children).forEach((star, index) => {
+        if (index < selectedRating) {
+            star.classList.add("selected");
+        } else {
+            star.classList.remove("selected");
             }
-          });
-        }
-      });
+        });
+    }
+});
+// Handle form submission
+reviewForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-      // Handle form submission
-      reviewForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+    const reviewText = reviewTextarea.value.trim();
+    const name = prompt("Введіть ваше ім'я:").trim();
 
-        const reviewText = reviewTextarea.value.trim();
-        const name = prompt("Введіть ваше ім'я:").trim();
+    if (!reviewText || !selectedRating || !name) {
+        alert("Будь ласка, заповніть всі поля та поставте оцінку.");
+        return;
+    }
 
-        if (!reviewText || !selectedRating || !name) {
-          alert("Будь ласка, заповніть всі поля та поставте оцінку.");
-          return;
-        }
+    const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    reviews.unshift({ name, review: reviewText, rating: selectedRating });
+    localStorage.setItem("reviews", JSON.stringify(reviews));
 
-        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-        reviews.unshift({ name, review: reviewText, rating: selectedRating });
-        localStorage.setItem("reviews", JSON.stringify(reviews));
+    reviewTextarea.value = "";
+    selectedRating = 0;
+    Array.from(starContainer.children).forEach((star) =>
+        star.classList.remove("selected")
+    );
 
-        reviewTextarea.value = "";
-        selectedRating = 0;
-        Array.from(starContainer.children).forEach((star) =>
-          star.classList.remove("selected")
-        );
+    loadReviews();
+});
 
-        loadReviews();
-      });
-
-      // Initial load
-      loadReviews();
+// Initial load
+loadReviews();
