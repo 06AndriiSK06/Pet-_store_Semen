@@ -24,7 +24,14 @@
     color: orange;
     font-weight: bold;
 }
-
+.popup__list__items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.popup__list__items__item {
+padding: 10px 0;
+}
 .main__PaymentDetails__block__contactName {
     font-size: 28px;
     font-weight: bold;

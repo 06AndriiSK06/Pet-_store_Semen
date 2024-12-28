@@ -507,7 +507,15 @@ html {
     overflow: hidden; 
     word-wrap: break-word;
   }
-  
+.popup__list__items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.popup__list__items__item {
+  padding: 10px 0;
+}
+
   .footer img {
     display: block; 
     width: 50px;

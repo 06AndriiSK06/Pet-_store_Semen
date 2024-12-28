@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="productFilter.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <!-- Logo -->
+          <a href="#" class="header__logo">
+            <img src="photo/svg/logo.png.svg" alt="Logo" />
+          </a>
+
+          <div class="header__info">
+            <p class="header__about">
+              <a href="aboutstore.html" class="header__link">О МАГАЗИНІ</a>
+            </p>
+
+            <p class="header__email">zooshopbilatserkva@gmail.com</p>
+            <p class="header__phone">
+              <img
+                src="photo/svg/phone.svg"
+                alt="Phone Icon"
+                class="header__phone-icon"
+              />
+              0 800 33-21-77
+            </p>
+          </div>
+        </div>
+        <div class="header__actions">
+          <div class="header__action header__action--image">
+            <a href="#" class="header__paw">
+              <img src="photo/svg/lapa1.jpg" alt="Lapa" class="Lapa1" />
+            </a>
+          </div>
+          <div class="header__action header__action--search">
+            <input
+              class="header__search-input"
+              type="text"
+              placeholder="Введіть вашу пошту."
+            />
+            <div class="header__search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8c1.72 0 3.32-.56 4.56-1.5l5.9 5.9 1.41-1.41-5.9-5.9C18.44 14.32 19 12.72 19 10c0-4.42-3.58-8-8-8zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="header__action header__action--cart">
+            <a href="#" class="header__cart">
+              <img
+                class="header__cart-icon"
+                src="photo/svg/pngwing.com.png"
+                alt="Cart"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="filter-container">
+      <div>
+        <label for="price-range">Фільтрувати за ціною:</label>
+        <input type="range" id="price-range" min="0" max="1000" step="10" />
+        <span id="price-value">500</span>
+      </div>
+      <button class="sort-button" id="sort-button">
+        Від дешевих до дорогих
+      </button>
+    </div>
+
+    <div class="products" id="product-container">
+      <!-- Product items dynamically added here -->
+    </div>
+
+    <div class="pagination">
+      <button id="prev-button">Назад</button>
+      <button id="next-button">Далі</button>
+    </div>
+
+    <footer class="footer">
+      <section
+        class="
+      "
+      >
+        <div class="information__text">
+          <img src="photo/footer/footer__information.png" alt="" />
+          <p class="information__text__p">Інформація</p>
+
+          <p class="information__text__p">
+            <a href="aboutstore.html" class="header__link"> О магазині</a>
+          </p>
+          <p class="information__text__p">
+            <a href="reviews.html" class="header__link">Відгуки</a>
+          </p>
+          <p class="information__text__p">
+            <a href="PaymentDetails.html" class="header__link"
+              >Реквізити для оплати товарів</a
+            >
+          </p>
+          <p class="information__text__p">
+            <a href="blog.html" class="header__link">Блог</a>
+          </p>
+        </div>
+      </section>
+      <section class="schedule">
+        <div class="schedule__text">
+          <img src="photo/footer/footer__schedule.png" alt="" />
+          <p class="information__text__p">Графік роботи:</p>
+          <p class="information__text__p">
+            пн-пт, с 10:00 до 19:00. сб, с 10:00 до 17.00. нд - вихідний
+          </p>
+        </div>
+      </section>
+      <section class="phone">
+        <div class="phone__text">
+          <img src="photo/footer/footer__phone.png" alt="" />
+          <p class="information__text__p">0 800 33-21-77</p>
+        </div>
+      </section>
+      <section class="mail">
+        <div class="mail__text">
+          <img src="photo/footer/footer__mail.png" alt="" />
+          <p class="information__text__p">zooshopbilatserkva@gmail.com</p>
+        </div>
+      </section>
+    </footer>
+    <script src="productFilter.js"></script>
+  </body>
+</html>

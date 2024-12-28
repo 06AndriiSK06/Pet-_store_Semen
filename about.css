@@ -32,7 +32,14 @@ body {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-
+.popup__list__items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.popup__list__items__item {
+padding: 10px 0;
+}
 .header__logo img {
   width: 800px;
   margin-left: -100px;
